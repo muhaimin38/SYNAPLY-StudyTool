@@ -12,17 +12,17 @@ import LandingPage from "./Landing";
 export default function App() {
   return (
     <>
-      <Dashboard/>
-      <Flashcards/>
-      <Sidebar/>
-      <Notes/>
-      <Sessions/>
-      <Flashcards/>
-      <Users/>
-      <Settings/>
-      <Registration />
+      {/* <Dashboard/> */}
+      {/* <Flashcards/> */}
+      {/* <Sidebar/> */}
+      {/* <Notes/> */}
+      {/* <Sessions/> */}
+      {/* <Flashcards/> */}
+      {/* <Users/> */}
+      {/* <Settings/> */}
+      {/* <Registration /> */}
       <Login/>
-      <LandingPage/>
+      {/* <LandingPage/> */}
       
 
     </>
