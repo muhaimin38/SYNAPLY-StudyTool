@@ -20,8 +20,8 @@ export default function App() {
       {/* <Flashcards/> */}
       {/* <Users/> */}
       {/* <Settings/> */}
-      {/* <Registration /> */}
-      <Login/>
+      <Registration />
+      {/* <Login/> */}
       {/* <LandingPage/> */}
       
 
