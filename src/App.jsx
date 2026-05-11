@@ -5,9 +5,9 @@ import Sessions from "./AdminSide/Sessions";
 import Flashcards from "./AdminSide/Flashcards";
 import Users from "./AdminSide/Users";
 import Settings from "./AdminSide/Settings";
-import Registration from "./registration";
+import Registration from "./Registration";
 import Login from "./Login";
-import LandingPage from "./Landing";
+// import LandingPage from "./Landing";
 
 export default function App() {
   return (
@@ -20,7 +20,7 @@ export default function App() {
       {/* <Flashcards/> */}
       {/* <Users/> */}
       {/* <Settings/> */}
-      <Registration />
+      {/* <Registration /> */}
       {/* <Login/> */}
       {/* <LandingPage/> */}
       

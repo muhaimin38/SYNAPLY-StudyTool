@@ -1,10 +1,13 @@
 import React from "react";
+import Sidebar from "./Sidebar";
 
 export default function Sessions() {
   return (
-    <div>
+    <div style={{display: "flex"}}>
+      <Sidebar />
 
-      <h2>AI Study Sessions </h2>
+      <div style={{flex: 1}}>
+         <h2>AI Study Sessions </h2>
 
       {/* SEARCH + FILTER UI */}
       <div className="card p-3 mb-4">
@@ -97,6 +100,8 @@ export default function Sessions() {
           </tbody>
         </table>
       </div>
+      </div>
+     
 
     </div>
   );

@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 export default function Sidebar() {
   return (
     <div className="bg-dark text-white p-3 vh-100" style={{ width: "220px" }}>
@@ -5,39 +7,39 @@ export default function Sidebar() {
 
       <ul className="nav flex-column">
         <li className="nav-item">
-          <a href="/" className="nav-link text-white">
+          <Link to="/Dashboard" className="nav-link text-white">
             Dashboard
-          </a>
+          </Link>
         </li>
 
         <li className="nav-item">
-          <a href="/notes" className="nav-link text-white">
+          <Link to ="/Notes" className="nav-link text-white">
             Notes
-          </a>
+          </Link>
         </li>
 
         <li className="nav-item">
-          <a href="/sessions" className="nav-link text-white">
+          <Link to="/Sessions"  className="nav-link text-white">
             Sessions
-          </a>
+          </Link>
         </li>
 
         <li className="nav-item">
-          <a href="/flashcards" className="nav-link text-white">
+          <Link to="/Flashcards" className="nav-link text-white">
             Flashcards
-          </a>
+          </Link>
         </li>
 
         <li className="nav-item">
-          <a href="/users" className="nav-link text-white">
+          <Link to="/Users"  className="nav-link text-white">
             Users
-          </a>
+          </Link>
         </li>
 
         <li className="nav-item">
-          <a href="/settings" className="nav-link text-white">
+          <Link to="/Settings" className="nav-link text-white">
             Settings
-          </a>
+          </Link>
         </li>
       </ul>
     </div>

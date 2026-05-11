@@ -1,42 +1,67 @@
+import React from "react";
+import Sidebar from "./Sidebar";
+
 export default function Dashboard() {
+  const stats = [
+    { title: "Users", value: 120 },
+    { title: "Notes", value: 450 },
+    { title: "Sessions", value: 300 },
+    { title: "Flashcards", value: 800,},
+  ];
+
+  const activities = [
+    "User created a note",
+    "New AI session started",
+    
+  ];
+
   return (
-    <div>
-      <h2>Admin Dashboard</h2>
+    <div style={{ display: "flex", minHeight: "100vh" }}>
+      <Sidebar />
 
-      {/* Stats */}
-      <div className="row mt-4">
-        <div className="col-md-2">
-          <div className="card p-3">Users: 120</div>
-        </div>
-        <div className="col-md-2">
-          <div className="card p-3">Notes: 450</div>
-        </div>
-        <div className="col-md-2">
-          <div className="card p-3">Sessions: 300</div>
-        </div>
-        <div className="col-md-2">
-          <div className="card p-3">Flashcards: 800</div>
-        </div>
-      </div>
+      <div
+        style={{
+          flex: 1,
+          padding: "30px",
+          backgroundColor: "#f5f5f5",
+        }}
+      >
+        <h2 style={{ textAlign: "center" }}>Admin Dashboard</h2>
 
-      {/* Activity */}
-      <h4 className="mt-5">Recent Activity</h4>
-      <ul className="list-group">
-        <li className="list-group-item">User created a note</li>
-        <li className="list-group-item">New AI session started</li>
-      </ul>
+        {/* Stats */}
+        <div className="row mt-4">
+          {stats.map((stat) => (
+            <div className="col-md-2">
+              <div className="card p-3">
+                {stat.title}: {stat.value}:{stat.hi}
+              </div>
+            </div>
+          ))}
+        </div>
 
-      {/* Actions */}
-      <div className="mt-4">
-        <a href="Notes">
-          <button className="btn btn-primary me-2" redirect="">
-            New Note
-          </button>
-        </a>
+        {/* Activity */}
+        <h4 className="mt-5">Recent Activity</h4>
 
-        <a href="Sessions">
-          <button className="btn btn-success">New Session</button>
-        </a>
+        <ul className="list-group">
+          {activities.map((activity) => (
+            <li className="list-group-item">{activity}</li>
+          ))}
+        </ul>
+
+        {/* Actions */}
+        <div className="mt-4">
+          <a href="Notes">
+            <button className="btn btn-primary me-2">
+              New Note
+            </button>
+          </a>
+
+          <a href="Sessions">
+            <button className="btn btn-success">
+              New Session
+            </button>
+          </a>
+        </div>
       </div>
     </div>
   );
